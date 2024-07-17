@@ -36,13 +36,21 @@ window.onload = function () {
   // 쇼핑 스와이퍼
   const swShopping = new Swiper(".sw-shopping", {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1.1,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    spaceBetween: 10,
+    breakpoints: {
+      320:{
+        slidesPerView: 3,
     grid: {
       rows: 3,
       fill: "row",
     },
     spaceBetween: 10,
-    breakpoints: {
+      },
       900: {
         spaceBetween: 32,
         slidesPerView: 4,
@@ -71,6 +79,70 @@ window.onload = function () {
     navigation: {
       nextEl: ".shopping .sw-next",
       prevEl: ".shopping .sw-prev",
+    },
+  });
+  // 투어 스와이퍼
+   const swTour = new Swiper(".sw-tour",{
+    // 모바일버전
+    loop: true,
+    slidesPerView: 1.1,
+    // spaceBetween:26,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    breakpoints: {
+      320:{
+        slidesPerView: 2,
+    spaceBetween:26,
+    grid: {
+      rows: 3,
+      fill: "row",
+        },
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView:3,
+        slidesPerGroup: 3,
+        grid: {
+          rows: 1,
+        },
+      },
+    },
+    navigation: {
+      nextEl: ".tour .sw-next",
+      prevEl: ".tour .sw-prev",
+    },
+  });
+  // 티켓 스와이퍼
+  const swTicket = new Swiper(".sw-ticket",{
+    loop:true,
+    slidesPerView:1,
+    breakpoints:{
+      320:{
+        slidesPerView: 2,
+        spaceBetween:26,
+      },
+      1024:{
+        slidesPerView:3,
+        spaceBetween:32
+      },
+      1280:{
+        slidesPerView:4,
+        spaceBetween:26,
+      }
+    },
+    navigation: {
+      nextEl: ".ticket .sw-next",
+      prevEl: ".ticket .sw-prev",
     },
   });
 };
