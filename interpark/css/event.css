@@ -1,0 +1,27 @@
+@charset "utf-8";
+.event .section-top{
+    margin-bottom: 30px;
+}
+.event .swiper-slide{
+
+}
+.event-img{
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 350px;
+    width: 300px;
+    margin: 0 auto;
+}
+.event-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+.event .sw-prev{
+top: 55%; 
+}
