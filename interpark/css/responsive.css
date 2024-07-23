@@ -1,8 +1,14 @@
 @charset "utf-8";
 
 @media screen and (max-width:1024px) {
+    .quick-menu{
+        display: block;
+    }
+    .quick-menu .inner{
+        border-bottom: none;
+    }
     .inner{
-        max-width: 760px;
+        /* max-width: 760px; */
         padding: 0 20px;
         border-bottom: 8px solid #f0f0f0;
     }
@@ -12,7 +18,7 @@
     .header .inner{
         height: 230px;
         padding: 15px 0;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     .header-left{
         width: 70%;
@@ -71,6 +77,18 @@
     .swiper-pagination-bullet-active{
         width: 20px;
         background-color: red;
+    }
+    .event .inner{
+        border: none;
+    }
+    .footer-mobile{
+        display: block;
+    }
+    .footer-menu{
+        display: none;
+    }
+    .footer-main{
+        display: none;
     }
 }
 

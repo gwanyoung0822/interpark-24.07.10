@@ -1,4 +1,13 @@
 window.onload = function () {
+  // 탑 버튼
+  const topBtn = document.querySelector("#gotop")
+  topBtn.addEventListener("click", function(e){
+    e.preventDefault()
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+  });
   // 상단의 마이페이지리스트 기능
   const mypageBt = document.querySelector(".mypage-bt");
   const mypageList = document.querySelector(".mypage-list");
